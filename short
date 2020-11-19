@@ -1,0 +1,2 @@
+#!/bin/bash
+[[ ! -z "$@" ]] && (gh issue create --repo ocruzv/gh-pages-url-shortener --label "cli" --title "$@" --body "" | sed -e 's/github.com\/ocruzv\/gh-pages-url-shortener\/issues/profe.dev\/s/g') || (echo "Forgot URL?"; exit 1)
